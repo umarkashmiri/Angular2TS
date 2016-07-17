@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>a2component</Title>
+      <Author>Umar Hadyatullah</Author>
+      <Description>A description for ng2_component</Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>a2component</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>selector</ID>
+          <ToolTip>selector</ToolTip>
+          <Default>selector</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>name</ID>
+          <ToolTip>name</ToolTip>
+          <Default>name</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>ComponentName</ID>
+          <ToolTip>ComponentName</ToolTip>
+          <Default>ComponentName</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="javascript" Delimiter="$"><![CDATA[import { Component, OnInit } from '@angular/core';
+
+@Component({
+    moduleId: module.id,
+    selector: '$selector$',
+    templateUrl: '$name$.component.html'
+})
+export class $ComponentName$Component implements OnInit {
+    constructor() { }
+
+    ngOnInit() { }
+
+}]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

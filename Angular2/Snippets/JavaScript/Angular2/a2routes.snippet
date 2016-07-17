@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>a2routes</Title>
+      <Author>Umar Hadyatullah</Author>
+      <Description>A description for ng2_routes</Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>a2routes</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>path</ID>
+          <ToolTip>path</ToolTip>
+          <Default>path</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>Component</ID>
+          <ToolTip>Component</ToolTip>
+          <Default>Component</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="javascript" Delimiter="$"><![CDATA[@Routes([
+    { path: '/$path$', component: $Component$ }
+])]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

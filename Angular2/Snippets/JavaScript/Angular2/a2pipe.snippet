@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>a2pipe</Title>
+      <Author>Umar Hadyatullah</Author>
+      <Description>A description for ng2_pipe</Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>a2pipe</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>name</ID>
+          <ToolTip>name</ToolTip>
+          <Default>name</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>PipeName</ID>
+          <ToolTip>PipeName</ToolTip>
+          <Default>PipeName</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>transformbody</ID>
+          <ToolTip>transformbody</ToolTip>
+          <Default>
+          </Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="javascript" Delimiter="$"><![CDATA[import { Pipe, PipeTransform } from '@angular/core';
+
+@Pipe({
+    name: '$name$'
+})
+
+export class $PipeName$Pipe implements PipeTransform {
+    transform(value: any, args: any[]): any {
+        $transformbody$
+    }
+}]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

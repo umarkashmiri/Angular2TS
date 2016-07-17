@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>a2bootstrap</Title>
+      <Author>Umar Hadyatullah</Author>
+      <Description>Angular 2 bootstrap</Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>a2bootstrap</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>AppComponent</ID>
+          <ToolTip>Default Component Name</ToolTip>
+          <Default>AppComponent</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>name</ID>
+          <ToolTip>name</ToolTip>
+          <Default>name</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="javascript" Delimiter="$"><![CDATA[
+import { enableProdMode } from '@angular/core';
+import { bootstrap } from '@angular/platform-browser-dynamic';
+import { $AppComponent$ } from './$name$.component';
+// enableProdMode();
+bootstrap($AppComponent$)
+		.then(success => console.log(`Bootstrap success`))
+		.catch(error => console.log(error));
+			]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

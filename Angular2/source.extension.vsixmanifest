@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Id="com.slighthack.angular2ts" Version="1.0" Language="en-US" Publisher="Umar Hadyatullah" />
+    <DisplayName>Angular2TS</DisplayName>
+    <Description xml:space="preserve">Angular 2 type script code snippets.</Description>
+    <Tags>angular2</Tags>
+  </Metadata>
+  <Installation AllUsers="true">
+    <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[12.0,14.0]" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="File" Path="registry.pkgdef" />
+  </Assets>
+</PackageManifest>

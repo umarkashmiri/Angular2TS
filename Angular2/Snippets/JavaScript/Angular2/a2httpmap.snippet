@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>a2httpmap</Title>
+      <Author>Umar Hadyatullah</Author>
+      <Description>A description for a2httpmap</Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>a2httpmap</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>function</ID>
+          <ToolTip>function</ToolTip>
+          <Default>function</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>url</ID>
+          <ToolTip>url</ToolTip>
+          <Default>url</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>errorFunction</ID>
+          <ToolTip>errorFunction</ToolTip>
+          <Default>errorFunction</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="javascript" Delimiter="$"><![CDATA[		//ensure imports are included
+        //import { Http, Response } from '@angular/http';
+        //import 'rxjs/add/operator/map';
+
+        return this.http.$function$($url$)
+            .map((res: Response) => {
+                return res.json();
+            })
+            .catch(this.$errorFunction$);]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

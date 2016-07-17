@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>a2outputevent</Title>
+      <Author>Umar Hadyatullah</Author>
+      <Description>A description for a2outputevent</Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>a2outputevent</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>eventName</ID>
+          <ToolTip>eventName</ToolTip>
+          <Default>eventName</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>eventDataType</ID>
+          <ToolTip>eventDataType</ToolTip>
+          <Default>eventDataType</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="javascript" Delimiter="$"><![CDATA[@Output() $eventName$: EventEmitter<$eventDataType$> = new EventEmitter();]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

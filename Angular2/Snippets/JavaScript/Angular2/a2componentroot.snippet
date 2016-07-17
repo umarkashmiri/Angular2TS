@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>a2componentroot</Title>
+      <Author>Umar Hadyatullah</Author>
+      <Description>A description for ng2_component_root</Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>a2componentroot</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>selector</ID>
+          <ToolTip>selector</ToolTip>
+          <Default>selector</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>name</ID>
+          <ToolTip>name</ToolTip>
+          <Default>name</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>route</ID>
+          <ToolTip>route</ToolTip>
+          <Default>
+          </Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>r</ID>
+          <ToolTip>r</ToolTip>
+          <Default>r</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>ro</ID>
+          <ToolTip>ro</ToolTip>
+          <Default>ro</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>rou</ID>
+          <ToolTip>rou</ToolTip>
+          <Default>rou</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>rout</ID>
+          <ToolTip>rout</ToolTip>
+          <Default>rout</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="javascript" Delimiter="$"><![CDATA[import { Component } from '@angular/core';
+import { HTTP_PROVIDERS } from '@angular/http';
+import { Routes, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from '@angular/router';
+import 'rxjs/Rx'; // load the full rxjs
+
+@Component({
+    moduleId: module.id,
+    selector: '$selector$',
+    templateUrl: '$name$.component.html',
+    directives: [ROUTER_DIRECTIVES],
+    providers: [
+      HTTP_PROVIDERS,
+      ROUTER_PROVIDERS
+    ]
+})
+@Routes([
+    $route$
+])
+export class AppComponent {}]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
